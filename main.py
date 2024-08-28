@@ -4,7 +4,7 @@ def main():
     test_construct_person_hand_match_matrix_when_p_is_smaller_than_2hc()
     test_construct_person_hand_match_matrix_when_p_is_greater_than_2hc()
 
-def construct_person_hand_match_matrix_when_p_is_smaller_than_2hc(distance_matrix):
+def construct_person_hand_match_matrix_when_2p_is_smaller_than_hc(distance_matrix):
     match_matrix = np.zeros((distance_matrix.shape[0], distance_matrix.shape[1]), dtype=bool)
 
     for i, row in enumerate(distance_matrix):
@@ -34,7 +34,7 @@ def construct_person_hand_match_matrix_when_p_is_smaller_than_2hc(distance_matri
     return match_matrix
 
 
-def construct_person_hand_match_matrix_when_p_is_greater_than_2hc(distance_matrix):
+def construct_person_hand_match_matrix_when_2p_is_greater_than_hc(distance_matrix):
     match_matrix = np.zeros((distance_matrix.shape[0], distance_matrix.shape[1]), dtype=bool)
 
     for col_index in range(distance_matrix.shape[1]):
